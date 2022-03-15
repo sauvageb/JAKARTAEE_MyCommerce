@@ -1,5 +1,6 @@
 package com.mycommerce.project.servlet;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -13,10 +14,10 @@ public class LoginServlet extends HttpServlet {
 
     public final static String URL = "/login";
 
-
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.sendRedirect("login.html");
+        RequestDispatcher rd = req.getRequestDispatcher("/WEB-INF/login.jsp");
+        rd.forward(req, resp);
     }
 
     @Override
@@ -26,7 +27,8 @@ public class LoginServlet extends HttpServlet {
         if (username != null) {
             HttpSession httpSession = req.getSession();
             httpSession.setAttribute("user", username);
-            req.getRequestDispatcher("/list-product").forward(req, resp);
+
+            resp.sendRedirect(ListProductServlet.URL);
         } else {
             //TODO
         }

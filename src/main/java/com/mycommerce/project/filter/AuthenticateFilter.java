@@ -20,7 +20,7 @@ public class AuthenticateFilter implements Filter {
         if (session.getAttribute("user") != null) {
             chain.doFilter(request, response);
         } else {
-            resp.sendRedirect(req.getContextPath() + "/login.html");
+            resp.sendRedirect(req.getContextPath() + "/login");
         }
     }
 }
