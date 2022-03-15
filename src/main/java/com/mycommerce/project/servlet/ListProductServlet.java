@@ -13,8 +13,10 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
 
-@WebServlet("/list-product")
+@WebServlet(ListProductServlet.URL)
 public class ListProductServlet extends HttpServlet {
+
+    public final static String URL = "/list-product";
 
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
