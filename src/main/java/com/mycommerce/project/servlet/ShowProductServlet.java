@@ -26,7 +26,7 @@ public class ShowProductServlet extends HttpServlet {
         try {
             Long id = Long.parseLong(idStr);
             ProductDao productDao = DaoFactory.getProductDao();
-            Product product = productDao.findProductById(id);
+            Product product = productDao.findById(id);
 
             req.setAttribute("product", product);
 

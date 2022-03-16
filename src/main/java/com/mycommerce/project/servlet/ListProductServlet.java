@@ -23,7 +23,7 @@ public class ListProductServlet extends HttpServlet {
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         // Fetching all products
         ProductDao productDao = DaoFactory.getProductDao();
-        List<Product> productList = productDao.getAllProducts();
+        List<Product> productList = productDao.getAll();
 
         // Passing data in view
         req.setAttribute("productList", productList);

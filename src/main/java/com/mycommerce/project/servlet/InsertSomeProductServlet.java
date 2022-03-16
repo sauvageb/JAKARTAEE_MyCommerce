@@ -20,6 +20,6 @@ public class InsertSomeProductServlet extends HttpServlet {
         p.setPrice(0.65F);
 
         ProductDao productDao = DaoFactory.getProductDao();
-        productDao.addProduct(p);
+        productDao.add(p);
     }
 }

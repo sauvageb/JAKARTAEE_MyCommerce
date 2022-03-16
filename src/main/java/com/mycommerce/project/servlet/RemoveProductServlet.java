@@ -19,7 +19,7 @@ public class RemoveProductServlet extends HttpServlet {
         try {
             Long id = Long.parseLong(idStr);
             ProductDao dao = DaoFactory.getProductDao();
-            dao.removeProduct(id);
+            dao.remove(id);
 
             resp.sendRedirect(ListProductServlet.URL);
 
