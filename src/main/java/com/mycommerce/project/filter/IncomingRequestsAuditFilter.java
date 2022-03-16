@@ -24,7 +24,7 @@ public class IncomingRequestsAuditFilter implements Filter {
                 .collect(Collectors.toMap(h -> h, httpServletRequest::getHeader));
         headers.entrySet().forEach(h -> System.out.println(h));
 
-        System.out.print("###### ###### Body ");
+        System.out.println("###### ###### Body ");
         Map<String, String[]> parameters = httpServletRequest.getParameterMap();
         if (parameters.isEmpty()) {
             System.out.println("\n");

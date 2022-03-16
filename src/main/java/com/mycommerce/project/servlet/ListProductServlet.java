@@ -1,8 +1,8 @@
 package com.mycommerce.project.servlet;
 
-import com.mycommerce.dao.DaoFactory;
-import com.mycommerce.dao.base.ProductDao;
-import com.mycommerce.model.Product;
+import com.mycommerce.project.dao.DaoFactory;
+import com.mycommerce.project.dao.base.ProductDao;
+import com.mycommerce.project.model.Product;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
