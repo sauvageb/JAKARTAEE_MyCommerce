@@ -12,8 +12,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("/auth/add-product")
+@WebServlet(AddProductServlet.URL)
 public class AddProductServlet extends HttpServlet {
+
+    public static final String URL = "/auth/add-product";
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
