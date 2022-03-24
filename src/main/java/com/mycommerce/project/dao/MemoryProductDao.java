@@ -1,8 +1,9 @@
 package com.mycommerce.project.dao;
 
-import com.mycommerce.dao.base.ProductDao;
-import com.mycommerce.dao.exception.UnknownProductException;
-import com.mycommerce.model.Product;
+
+import com.mycommerce.project.dao.base.ProductDao;
+import com.mycommerce.project.dao.entity.Product;
+import com.mycommerce.project.dao.exception.UnknownProductException;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -39,7 +40,7 @@ class MemoryProductDao implements ProductDao {
     public Product findById(Long id) {
         int index = this.getIndexById(id);
         if (index > -1) {
-            Product product = (Product) products.get(index);
+            Product product = products.get(index);
             return product;
         } else {
             throw new UnknownProductException(id);

@@ -1,7 +1,7 @@
 package com.mycommerce.project.dao.jpa;
 
-import com.mycommerce.dao.base.ProductDao;
-import com.mycommerce.model.Product;
+import com.mycommerce.project.dao.base.ProductDao;
+import com.mycommerce.project.dao.entity.Product;
 import com.mycommerce.project.dao.util.PersistenceManager;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityTransaction;

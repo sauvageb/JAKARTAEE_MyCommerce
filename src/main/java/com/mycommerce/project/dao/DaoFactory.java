@@ -2,8 +2,8 @@
 package com.mycommerce.project.dao;
 
 
-import com.mycommerce.dao.base.ProductDao;
 import com.mycommerce.project.dao.base.CategoryDao;
+import com.mycommerce.project.dao.base.ProductDao;
 import com.mycommerce.project.dao.jpa.JpaCategoryDao;
 import com.mycommerce.project.dao.jpa.JpaProductDao;
 

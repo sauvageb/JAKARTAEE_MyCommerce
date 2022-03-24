@@ -1,7 +1,8 @@
 package com.mycommerce.project.dao;
 
-import com.mycommerce.dao.base.ProductDao;
-import com.mycommerce.model.Product;
+
+import com.mycommerce.project.dao.base.ProductDao;
+import com.mycommerce.project.dao.entity.Product;
 
 import java.util.List;
 
